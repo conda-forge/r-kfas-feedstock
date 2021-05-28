@@ -72,6 +72,7 @@ about:
 extra:
   recipe-maintainers:
     - melonhead901
+    - conda-forge/r
 
 
 # The original CRAN metadata for this package was:
