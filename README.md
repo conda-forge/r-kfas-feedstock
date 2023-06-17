@@ -1,11 +1,22 @@
+About r-kfas-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-kfas-feedstock/blob/main/LICENSE.txt)
+
 About r-kfas
-============
+------------
 
 Home: https://github.com/helske/KFAS
 
 Package license: GPL-2.0-or-later
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-kfas-feedstock/blob/main/LICENSE.txt)
+Summary: State space modelling is an efficient and flexible framework for  statistical inference of a broad class of time series and other data. KFAS  includes computationally efficient functions for Kalman filtering, smoothing,  forecasting, and simulation of multivariate exponential family state space models,  with observations from Gaussian, Poisson, binomial, negative binomial, and gamma  distributions. See the paper by Helske (2017) <doi:10.18637/jss.v078.i10> for details.
+About r-kfas
+------------
+
+Home: https://github.com/helske/KFAS
+
+Package license: GPL-2.0-or-later
 
 Summary: State space modelling is an efficient and flexible framework for  statistical inference of a broad class of time series and other data. KFAS  includes computationally efficient functions for Kalman filtering, smoothing,  forecasting, and simulation of multivariate exponential family state space models,  with observations from Gaussian, Poisson, binomial, negative binomial, and gamma  distributions. See the paper by Helske (2017) <doi:10.18637/jss.v078.i10> for details.
 
@@ -27,13 +38,6 @@ Current build status
         <table>
           <thead><tr><th>Variant</th><th>Status</th></tr></thead>
           <tbody><tr>
-              <td>linux_64_r_base4.1</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=11845&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-kfas-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_r_base4.1" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
               <td>linux_64_r_base4.2</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=11845&branchName=main">
@@ -41,10 +45,10 @@ Current build status
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_r_base4.1</td>
+              <td>linux_64_r_base4.3</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=11845&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-kfas-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_r_base4.1" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-kfas-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_r_base4.3" alt="variant">
                 </a>
               </td>
             </tr><tr>
@@ -52,6 +56,13 @@ Current build status
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=11845&branchName=main">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-kfas-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_r_base4.2" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_64_r_base4.3</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=11845&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-kfas-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_r_base4.3" alt="variant">
                 </a>
               </td>
             </tr><tr>
