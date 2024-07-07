@@ -1,7 +1,6 @@
 {% set version = "1.5.1" %}
 
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-kfas
@@ -14,9 +13,8 @@ source:
   sha256: 1292dc07d5f0509a0506ffdb7e9fa616734f0ae981dad0a044cf9e06d5f05ccf
 
 build:
-  merge_build_host: true  # [win]
   # If this is a new build for the same version, increment the build number.
-  number: 0
+  number: 1
 
   # This is required to make R link correctly on Linux.
   rpaths:
@@ -27,8 +25,10 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}          # [not win]
+    - {{ stdlib("c") }}            # [not win]
     - {{ compiler('fortran') }}    # [not win]
     - {{ compiler('m2w64_c') }}         # [win]
+    - {{ stdlib("m2w64_c") }}           # [win]
     - {{ compiler('m2w64_fortran') }}   # [win]
     - {{ posix }}filesystem        # [win]
     - {{ posix }}make
@@ -43,7 +43,6 @@ requirements:
 
   run:
     - r-base
-    - {{ native }}gcc-libs         # [win]
 
 test:
   commands:
