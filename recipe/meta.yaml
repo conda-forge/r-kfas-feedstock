@@ -1,4 +1,4 @@
-{% set version = "1.5.1" %}
+{% set version = "1.6.0" %}
 
 {% set posix = 'm2-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/KFAS_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/KFAS/KFAS_{{ version }}.tar.gz
-  sha256: 1292dc07d5f0509a0506ffdb7e9fa616734f0ae981dad0a044cf9e06d5f05ccf
+  sha256: 48268eb44fd548cacd93bdb16473d0869e4b87947b6c582c0fd8118bacf1e987
 
 build:
   # If this is a new build for the same version, increment the build number.
-  number: 1
+  number: 0
 
   # This is required to make R link correctly on Linux.
   rpaths:
